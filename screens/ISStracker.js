@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { View, Text, StyleSheet, ImageBackground, Image, SafeAreaView, StatusBar, Platform, Alert } from "react-native"
 import { MapView, Marker } from "react-native-maps"
-import { axios } from "axios"
+import axios from "axios"
 
 export default class ISStracker extends Component {
     constructor() {
@@ -46,7 +46,7 @@ export default class ISStracker extends Component {
                             <Text style={styles.titleText}> Localização EEI (ISS) </Text>
                         </View>
                         <View style={styles.mapContainer}>
-                            <MapView style={styles.map}
+                            {/* { <MapView style={styles.map}
                                 region={{
                                     latitude: this.state.location.latitude,
                                     longitude: this.state.location.longitude,
@@ -61,7 +61,7 @@ export default class ISStracker extends Component {
                                     <Image style={{ width: 50, height: 50 }} source={require("../assets/iss_icon.png")}
                                     />
                                 </Marker>
-                            </MapView>
+                            </MapView> } */}
                         </View>
                         <View style={styles.infoContainer}>
                             <Text style={styles.infoText}>Latitude: {this.state.location.latitude}</Text>
